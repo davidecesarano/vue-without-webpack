@@ -1,0 +1,18 @@
+{
+  "name": "vue-without-webpack",
+  "version": "1.0.0",
+  "description": "Use Vue.js without webpack",
+  "scripts": {
+    "sync": "browser-sync start --server 'src' --files 'src' --single"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidecesarano/vue-without-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidecesarano/vue-without-webpack/issues"
+  },
+  "homepage": "https://github.com/davidecesarano/vue-without-webpack#readme"
+}
