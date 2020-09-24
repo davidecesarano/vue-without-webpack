@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Use Vue.js without webpack",
   "scripts": {
-    "sync": "browser-sync start --server 'src' --files 'src' --single"
+    "sync": "browser-sync start --server 'public' --files 'public' --single"
   },
   "repository": {
     "type": "git",
