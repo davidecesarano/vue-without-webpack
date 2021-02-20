@@ -7,6 +7,5 @@
 
 <script lang="babel">
     export default {
-        name: 'Page'
     }
 </script>

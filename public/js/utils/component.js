@@ -15,15 +15,18 @@ define(['babel-standalone', 'http-vue-loader'], function (Babel, httpVueLoader) 
                 'stage-3',
             ],
             plugins: [
-                'transform-es2015-modules-amd',
+                'transform-modules-amd',
             ],
         }).code;
     };
 
     return {
         load: function (name, req, onload, config) {
+            var includeName = name.includes('/')
+            var checkName = includeName ? name.split('/') : [name]
+            var realName = checkName[checkName.length - 1]
             var d = new Date();
-            httpVueLoader(req.toUrl(name) + '.vue?v=' + d.getTime(), name)().then(onload);
+            httpVueLoader(req.toUrl(name) + '.vue?v=' + d.getTime(), realName)().then(onload);
         },
     };
 });

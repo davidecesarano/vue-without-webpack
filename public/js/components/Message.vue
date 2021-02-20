@@ -6,7 +6,6 @@
 
 <script lang="babel">
     export default {
-        name: 'Message',
         props: {
             text: String
         }

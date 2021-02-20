@@ -4,6 +4,5 @@
 
 <script lang="babel">
     export default {    
-        name: 'App'
     }
 </script>

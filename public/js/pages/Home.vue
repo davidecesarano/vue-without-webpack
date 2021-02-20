@@ -6,10 +6,9 @@
 </template>
 
 <script lang="babel">
-    import Message from 'component!../components/Message'
+    import Message from 'component!./components/Message'
 
     export default {
-        name: 'Home',
         components: {
             Message
         },

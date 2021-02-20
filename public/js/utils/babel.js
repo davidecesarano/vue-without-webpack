@@ -1,4 +1,4 @@
-define(['babel-standalone', 'babel-polyfill', 'http-vue-loader'], function (Babel, _, httpVueLoader) {
+define(['babel-standalone', 'http-vue-loader'], function (Babel, httpVueLoader) {
     return {
         load: function (name, req, onload, config) {
             var d = new Date();
@@ -9,7 +9,7 @@ define(['babel-standalone', 'babel-polyfill', 'http-vue-loader'], function (Babe
                         'stage-3',
                     ],
                     plugins: [
-                        'transform-es2015-modules-amd',
+                        'transform-modules-amd',
                     ],
                 }).code);
             });
